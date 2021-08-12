@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ONE OK ROCK Survey</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 id="title">ONE OK ROCK Survey Form</h1>
+    <p id="description">Please fill the form, thank you.</p>
+    <form id="survey-form">
+      <label for="name" id="name-label">
+        Name
+        <input type="text" id="name" placeholder="Enter your name" required />
+      </label>
+      <label for="email" id="email-label">
+        Email
+        <input type="email" id="email" placeholder="Enter your email" required />
+      </label>
+      <label for="number" id="number-label">
+        Age (optional)
+        <input type="number" id="number" placeholder="How old are you?" min="17" max="40" />
+      </label>
+      <label for="dropdown" id="dropdown-label">
+        How do you know ONE OK ROCK?
+        <select id="dropdown">
+          <option value="youtube">Youtube</option>
+          <option value="google">Google</option>
+          <option value="social-media">Social Media</option>
+        </select>
+      </label>
+      <label for="member" id="member-label"> Who is your favorite member? </label>
+      <input type="radio" name="member" value="1" checked /> Moriuchi Takahiro <br />
+      <input type="radio" name="member" value="2" /> Yamashita Tōru <br />
+      <input type="radio" name="member" value="3" /> Kohama Ryōta <br />
+      <input type="radio" name="member" value="4" /> Kanki Tomoya <br />
+      <br />
+      <label for="albums" id="albums-label"> Choose your favorite albums? </label>
+      <input type="checkbox" value="heartache" />Heartache <br />
+      <input type="checkbox" value="the-beggining" />The Beggining <br />
+      <input type="checkbox" value="change" />Change <br />
+      <input type="checkbox" value="skyfall" />Skyfall <br />
+      <input type="checkbox" value="clock-strikes" />Clock Strikes <br /><br /><br />
+      <label for="comments" id="comments-label">
+        Any comments or suggestions?
+        <textarea id="comments" cols="30" rows="10"></textarea>
+      </label>
+      <button id="submit" type="submit">Kirim</button>
+    </form>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
